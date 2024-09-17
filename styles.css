@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(31, 41, 55, 1);
+  color: white;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ccc;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://www.csjn.gov.ar/imagenes/imghome_01.jpg') center/cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 64px;
+}
+
+.hero p {
+  font-size: 32px;
+}
+
+.lawyers {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.lawyers h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.lawyers-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lawyer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.lawyer:hover {
+  transform: scale(1.05);
+}
+
+.lawyer-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.lawyer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content div {
+  width: 30%;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 14px;
+}
